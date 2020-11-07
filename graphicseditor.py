@@ -1,12 +1,13 @@
 from PyQt5 import QtWidgets
-from View import Editor
+
+from Controller import Controller
+from GraphObject import GraphObject
 import sys
 
 
 def main():
     app = QtWidgets.QApplication(sys.argv)
-    g = Editor()
-    g.show()
+    g = Controller()
     sys.exit(app.exec_())
 
 
